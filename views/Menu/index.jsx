@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { LineDivisor } from '../../components/LineDivisor'
+import { HeaderSeparator } from '../../components/HeaderSeparator'
 import { Button } from '../../components/Button'
 
-import ImageLogo from "../../assets/logoEllca.svg"
+import ImageLogo from '../../assets/logoEllca.svg'
 import {styles} from './styles'
 
 export function Menu() {
@@ -12,7 +12,7 @@ export function Menu() {
   return (
     <View style={styles.container}>
       <View style={styles.box}>
-        <LineDivisor content={"APR VIRTUAL"}/>
+        <HeaderSeparator content={'APR VIRTUAL'}/>
         
       </View>
         <ImageLogo width={'250'} height={'250'} style={styles.imageLogo}/>     
