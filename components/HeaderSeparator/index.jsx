@@ -17,7 +17,7 @@ export function HeaderSeparator({...props}){
             <View style={[styles.lineDivisor,{margin: 8}]} />
           </>
           :
-          <View style={[styles.container, {marginLeft: '-30%', marginBottom: '20%'}]}>
+          <View style={[styles.container, {marginBottom: '4%'}]}>
             <ImageLogo width={'100'} height={'100'} style={styles.logo} />
             <View style={[styles.lineDivisor,{margin: 0}]} />
           </View>
@@ -27,7 +27,6 @@ export function HeaderSeparator({...props}){
 }
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor:'rgba(255,255,255,0)'
