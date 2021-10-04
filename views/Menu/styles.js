@@ -11,11 +11,12 @@ export const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    height:50
+    height:'30%'
   },
   imageLogo:{
     marginTop: '-90%',
     marginBottom: '-45%',
+    marginLeft: '-8%',
     padding: 0
   }
 

@@ -1,9 +1,10 @@
 import React from 'react';
-import { View,Text, StyleSheet } from 'react-native'
+import { View,Text, StyleSheet, Dimensions  } from 'react-native'
 
 import ImageLogo from '../../assets/logoEllca.svg'
 
 export function HeaderSeparator({...props}){
+  const windowWidth = Dimensions.get('window').width;
   return(
     <View style={styles.container}>
         { 
@@ -16,10 +17,10 @@ export function HeaderSeparator({...props}){
             <View style={[styles.lineDivisor,{margin: 8}]} />
           </>
           :
-          <>
-            <ImageLogo width={'120'} height={'120'} style={styles.logo} />
+          <View style={[styles.container, {marginLeft: '-30%', marginBottom: '20%'}]}>
+            <ImageLogo width={'100'} height={'100'} style={styles.logo} />
             <View style={[styles.lineDivisor,{margin: 0}]} />
-          </>
+          </View>
         }
     </View>
   )
@@ -28,6 +29,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor:'rgba(255,255,255,0)'
   },
   lineDivisor:{
   borderBottomWidth: 2,

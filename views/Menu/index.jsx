@@ -7,19 +7,19 @@ import { Button } from '../../components/Button'
 import ImageLogo from '../../assets/logoEllca.svg'
 import {styles} from './styles'
 
-export function Menu() {
+export function Menu({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.box}>
+      <View style={[styles.box, {marginTop:'-15%'}]}>
         <HeaderSeparator content={'APR VIRTUAL'}/>
         
       </View>
         <ImageLogo width={'250'} height={'250'} style={styles.imageLogo}/>     
       <View style={styles.box}>
-        <Button title={'GERAR APR DIGITAL'} />
-        <Button title={'GERAR APR DE RECUSA'} />
-        <Button title={'AJUDA'} />
+        <Button title={'GERAR APR DIGITAL'} onPress={() => navigation.navigate('AprSelector')}/>   
+        <Button title={'GERAR APR DE RECUSA'} onPress={() => navigation.navigate('AprRecuse')} />
+        <Button title={'AJUDA'} onPress={() => navigation.navigate('Help')}/>
       </View>
 
   </View>
