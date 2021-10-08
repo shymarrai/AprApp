@@ -15,4 +15,21 @@ export const styles = StyleSheet.create({
     marginTop: '10%',
     marginBottom: '-2%',
   },
+  listOptions: {
+    marginVertical: '10%',
+    height: 100
+  },
+  buttonSelect:{
+    width:300,
+    borderRadius:10,
+    borderWidth: 3,
+    textAlign: 'left',
+    
+  },
+  buttonSelectDefault:{
+    borderColor: '#ddd',
+  },
+  buttonSelectSelected:{
+    borderColor: '#1295FA',
+  }
 })
